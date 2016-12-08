@@ -61,7 +61,7 @@ cidades_portugal = Cidades(
                       ('Castelo Branco', 'Viseu', 174),
                       ('Santarem', 'Evora', 122),
                       ('Lisboa', 'Evora', 132),
-                      ('Evora', 'Beja', 80),
+                      ('Evora', 'Beja', 80),  # 105, para ser admissível
                       ('Lisboa', 'Beja', 178),
                       ('Faro', 'Beja', 147),
                       ('Braga', 'Guimaraes', 25),
