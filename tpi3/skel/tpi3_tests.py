@@ -273,7 +273,7 @@ lsols = cs.search_all()
 
 print("Soluções:")
 for s in lsols:
-    print(s)
+    print([(v,s[v]) for v in ['F','O','R','T','U','W']])
 
 print("Tempo:",time.clock()-t0)
 
