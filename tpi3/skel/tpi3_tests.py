@@ -103,6 +103,12 @@ print("Solution: {0}".format(t.search2()))
 print(t.solution_cost,t.tree_size)
 print("-------------------------------------------")
 
+q = SearchProblem(cidades_portugal,'Guarda','Lisboa')
+r = MyTree(q,'banbou')
+print("Solution: {0}".format(r.search2()))
+print(r.solution_cost,r.tree_size)
+print("-------------------------------------------")
+
 
 
 # -------------------------------------------------------------
