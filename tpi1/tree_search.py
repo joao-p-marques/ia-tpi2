@@ -45,12 +45,12 @@ class SearchDomain(ABC):
     def heuristic(self, state, goal_state):
         pass
 
-#   # comparacao de estados (devolve True se estados foram equivalentes)
-#   @abstractmethod
-#   def same(self, state1, state2):
-#       pass
-
     # comparacao de estados (devolve True se estados foram equivalentes)
+    @abstractmethod
+    def equivalent(self, state1, state2):
+        pass
+
+    # devolve True se goal satisfeito no state
     @abstractmethod
     def satisfies(self, state, goal):
         pass
