@@ -62,8 +62,7 @@ z.insertEvent('joseAvilez',
 # that occurred when using the SOF2019 operating system
 
 z.insertEvent('troubleshooter', 
-    [ Fluent('antonio','using','SOF2019'),
-      Fluent('antonio','using','SOF2019-PAL'),
+    [ Fluent('antonio','using','SOF2019-PAL'),
       Fluent('antonio','needsHelp','yes'),
       Fluent('antonio','exageratedUsing','mouse07'),
       Fluent('antonio','hasFaceState','worried'),
@@ -71,8 +70,7 @@ z.insertEvent('troubleshooter',
       Fluent('antonio','hasEmailState','acumulated') ])
 
 z.insertEvent('troubleshooter', 
-    [ Fluent('joana','using','SOF2019'),
-      Fluent('joana','using','SOF2019-PAL'),
+    [ Fluent('joana','using','SOF2019-PAL'),
       Fluent('joana','needsHelp','no'),
       Fluent('joana','exageratedUsing','keyboard05'),
       Fluent('joana','hasFaceState','worried'),
@@ -97,8 +95,7 @@ z.insertEvent('troubleshooter',
       Fluent('carlos','hasEmailState','processed') ] )
 
 z.insertEvent('troubleshooter', 
-    [ Fluent('marta','using','SOF2019'),
-      Fluent('marta','using','SOF2019-PAL'),
+    [ Fluent('marta','using','SOF2019-PAL'),
       Fluent('marta','needsHelp','no'),
       Fluent('marta','exageratedUsing','mouse04'),
       Fluent('marta','hasFaceState','worried'),
