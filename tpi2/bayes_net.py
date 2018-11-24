@@ -15,10 +15,10 @@ class BayesNet:
         self.dependencies.setdefault(var,{})[frozenset(mothers)] = prob
 
     def display(self):
-        for var in self.dependencies:
+        for var in sorted(self.dependencies.keys()):
             print(var,":")
             for m in self.dependencies[var]:
-                print("    " + str(list(m)) + "-->" + 
+                print("    " + str(sorted(m)) + "-->" + 
                                str(self.dependencies[var][m]) )
 
     # Probabilidade conjunta de uma dada conjuncao 
