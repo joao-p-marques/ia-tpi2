@@ -129,6 +129,8 @@ print('\nz.abstract_from_descendents(human):',
 print('\nz.abstract_from_descendents(mammal):',
          z.abstract_from_descendents('mammal'))
 
+print()
+
 dependSOF = \
   { ('hasEmailState','acumulated')      : [ ('hasWorkLoad','highLoad') ],
     ('hasFaceState','worried')          : [ ('hasWorkLoad','highLoad'),
