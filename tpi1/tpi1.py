@@ -44,3 +44,4 @@ class MyTree(SearchTree):
                 self.show(heuristic,n,indent+'  ')
 
 
+

@@ -21,7 +21,6 @@ class Cidades(SearchDomain):
         if C1==city:
             return C2
     def cost(self, city, action):
-        pass
         if action[0]!=city:
             return None
         for (c1,c2,d) in self.connections:
@@ -30,7 +29,6 @@ class Cidades(SearchDomain):
                 return d
         return None
     def heuristic(self, city, goal_city):
-        pass
         (x1,y1) = self.coordinates[city]
         (x2,y2) = self.coordinates[goal_city]
         return math.hypot(x1-x2,y1-y2)
@@ -131,6 +129,7 @@ t4 = MyTree(p45,'astar')
 print(t4.search2())
 print('total=',t4.total_nodes,', non terminal=',t4.non_terminal_nodes,', terminal=',t4.terminal_nodes)
 
+
 t5 = MyTree(p45,'astar',100)
 print(t5.search2())
 print('total=',t5.total_nodes,', non terminal=',t5.non_terminal_nodes,', terminal=',t5.terminal_nodes)
@@ -144,5 +143,11 @@ print('total=',t6.total_nodes,', non terminal=',t6.non_terminal_nodes,', termina
 t7 = MyTree(p67,'astar',65)
 print(t7.search2())
 print('total=',t7.total_nodes,', non terminal=',t7.non_terminal_nodes,', terminal=',t7.terminal_nodes)
+
+t7a = MyTree(p67,'astar',40)
+print(t7a.search2())
+print('total=',t7a.total_nodes,', non terminal=',t7a.non_terminal_nodes,', terminal=',t7a.terminal_nodes)
+
+
 
 
