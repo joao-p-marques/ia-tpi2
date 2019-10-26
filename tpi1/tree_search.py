@@ -97,8 +97,9 @@ class SearchTree:
             lnewnodes = []
             for a in self.problem.domain.actions(node.state):
                 newstate = self.problem.domain.result(node.state,a)
-                newnode = SearchNode(newstate,node)
-                lnewnodes.append(newnode)
+                if newstate not in self.get_path(node):
+                    newnode = SearchNode(newstate,node)
+                    lnewnodes.append(newnode)
             self.add_to_open(lnewnodes)
         return None
 
