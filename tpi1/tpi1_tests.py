@@ -134,4 +134,14 @@ t5 = MyTree(p45,'astar',100)
 print(t5.search2())
 print('total=',t5.total_nodes,', non terminal=',t5.non_terminal_nodes,', terminal=',t5.terminal_nodes)
 
+p67 = SearchProblem(cidades_portugal,'Guimaraes','Lisboa')
+
+t6 = MyTree(p67,'astar')
+print(t6.search2())
+print('total=',t6.total_nodes,', non terminal=',t6.non_terminal_nodes,', terminal=',t6.terminal_nodes)
+
+t7 = MyTree(p67,'astar',65)
+print(t7.search2())
+print('total=',t7.total_nodes,', non terminal=',t7.non_terminal_nodes,', terminal=',t7.terminal_nodes)
+
 
