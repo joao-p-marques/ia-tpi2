@@ -94,6 +94,9 @@ print("dependents of 'illumination':", z.query_dependents('illumination'))
 print("-------------------------------------------")
 print("dependents of 'engine':", z.query_dependents('engine'))
 print("-------------------------------------------")
+print("dependents of 'energy':", z.query_dependents('energy'))
+print("-------------------------------------------")
+
 
 print("causes of 'driving':",z.query_causes('driving'))
 print("-------------------------------------------")
