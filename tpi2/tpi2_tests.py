@@ -97,6 +97,10 @@ print("-------------------------------------------")
 
 print("causes of 'driving':",z.query_causes('driving'))
 print("-------------------------------------------")
+print("causes of 'fog lights':",z.query_causes('fog lights'))
+print("-------------------------------------------")
+print("causes of 'gasoline':",z.query_causes('gasoline'))
+print("-------------------------------------------")
 
 
 print("sorted causes of 'driving':",z.query_causes_sorted('driving'))
@@ -176,5 +180,7 @@ print("-------------------------------------------")
 print("Markov blanket of 'c_s'")
 print(bn.markov_blanket('c_s'))
 print("-------------------------------------------")
+
+
 
 
