@@ -42,7 +42,6 @@ class MySN(SemanticNetwork):
         return list(set(lst))
 
     def query_causes_sorted(self,entity):
-        query_causes = self.query_causes(entity)
         return sorted(
                 [
                     (
@@ -54,9 +53,9 @@ class MySN(SemanticNetwork):
                             d.relation.entity1 == x
                         ] )
                     ) 
-                    for x in query_causes 
+                    for x in self.query_causes(entity)
                 ],
-                key = lambda e : e[1]
+                key = lambda e : (e[1], e[0])
             )
 
     def avg(self, lst):
@@ -69,14 +68,11 @@ class MyBN(BayesNet):
 
     def markov_blanket(self,var):
         parents = self.parents(var)
-        # print(f'Parents: {parents}')
         children = list(set([node for node in self.dependencies if var in self.parents(node)]))
-        # print(f'Children: {children}')
         children_parents = []
         for c in children:
             children_parents += self.parents(c)
         children_parents.remove(var)
-        # print(f'Children parents: {children_parents}')
         return parents + children + children_parents
 
 
